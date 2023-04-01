@@ -1,0 +1,188 @@
+header {
+  background-color: #003865;
+  border-radius: 0px 40px/40px;
+  /* title and footer box styling */
+  color: #cacaca;
+  padding: 1px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+header h1 {
+  text-shadow: 7px 7px black;
+}
+header .title-wrapper {
+  display: flex;
+  margin: 1rem;
+  margin-top: 0.5rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+header .title-wrapper .heading-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+header .title-wrapper .heading-wrapper h1 {
+  margin-top: 4px;
+  margin-left: -120px;
+}
+header .title-wrapper img {
+  width: 120px;
+}
+@media screen and (max-width: 834px) {
+  header .title-wrapper {
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 1rem;
+    /* adjusts image location in tablet view */
+  }
+  header .title-wrapper .heading-wrapper h1 {
+    margin-left: 0;
+    /* keeps heading text centered in tablet view */
+  }
+}
+@media screen and (max-width: 425px) {
+  header .title-wrapper .heading-wrapper {
+    font-size: 1rem;
+    /* shrinks font size in phone view */
+  }
+}
+header .nav-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 24px;
+  padding-bottom: 14px;
+}
+header .nav-items a {
+  text-decoration: none;
+  color: #cacaca;
+  /* sets nav items to hover and grow */
+}
+header .nav-items a:hover {
+  transform: scale(1.2);
+  transition: all 0.4s ease-in-out;
+}
+@media screen and (max-width: 834px) {
+  header .nav-items {
+    font-size: 20px;
+    /* shrinks font size in tablet view */
+  }
+}
+@media screen and (max-width: 425px) {
+  header .nav-items {
+    font-size: 16px;
+    /* shrinks font size in phone view */
+  }
+}
+
+footer {
+  background-color: #003865;
+  border-radius: 0px 40px/40px;
+  /* title and footer box styling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+footer .social-media {
+  display: flex;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  padding: 10px;
+}
+footer .social-media a {
+  text-decoration: none;
+}
+footer .social-media .fa {
+  color: #cacaca;
+}
+footer .social-media .fa:hover {
+  transform: scale(1.2);
+  transition: all 0.4s ease-in-out;
+}
+
+@media screen and (max-width: 834px) {
+  footer .social-media {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+main .contact-container {
+  display: flex;
+  background-color: #003865;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0px;
+  padding-left: 48px;
+  padding-right: 48px;
+  border-radius: 36px;
+}
+main .contact-container h4 {
+  color: #cacaca;
+  font-size: 3rem;
+  text-shadow: 7px 7px black;
+  margin-top: 32px;
+  margin-bottom: 6px;
+}
+main .contact-container p {
+  color: #cacaca;
+}
+main .contact-container form {
+  margin-bottom: 24px;
+}
+main .contact-container form .form-elements {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+main .contact-container form .form-elements label {
+  font-size: 1.2rem;
+  color: #cacaca;
+  padding-bottom: 0.2rem;
+}
+main .contact-container form .form-elements .form-input {
+  border: 1px solid;
+  color: #003865;
+  border-radius: 4px;
+  outline: none;
+  font-size: 1.2rem;
+}
+main .contact-container form .form-elements .form-input:not(.form-textarea) {
+  height: 28px;
+}
+main .contact-container form .form-elements .form-input.form-textarea {
+  resize: none;
+}
+main .contact-container form .form-elements .form-input:focus {
+  box-shadow: 0 0 2px 2px;
+}
+main .contact-container form .btn-div {
+  text-align: center;
+}
+main .contact-container form .btn-div #submit {
+  /* styling for send button */
+  height: 40px;
+  min-width: 120px;
+  background-color: #003865;
+  color: #cacaca;
+  font-size: 1.4rem;
+  border: 1px solid #cacaca;
+}
+main .contact-container form .btn-div #submit:hover {
+  cursor: pointer;
+  background-color: #cacaca;
+  color: #003865;
+}/*# sourceMappingURL=contact.css.map */

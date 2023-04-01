@@ -1,0 +1,94 @@
+@import "../components/header";
+@import "../components/footer";
+@import "../defaults/colors";
+@import "../defaults/breakpoint";
+
+    main {
+        color: $primary-color;
+        display: flex;
+        flex-direction: column;
+        padding-left: 15%;
+        padding-right: 15%;
+        position: absolute;
+
+        h3 {
+            padding-top: 12rem;
+            font-size: 3rem;
+            text-align: center;
+            margin: 16px;
+            
+        }
+
+        h4 {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .blog-image {
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        p {
+            font-size: 1.25rem
+        }
+
+        @media screen and (max-width: $tablet) {
+            /* changes font size in tablet view */
+            padding-left: 10%;
+            padding-right: 10%;
+            h3 {
+                padding-top: 18rem;
+                font-size: 2.5rem;
+                text-align: center;
+                margin: 16px;
+                
+            }
+    
+            h4 {
+                font-size: 1.25rem;
+                text-align: center;
+            }
+    
+            .blog-image {
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+            }
+    
+            p {
+                font-size: 1.1rem
+            }
+        }
+
+        @media screen and (max-width: $phone) {
+            /* changes font size in tablet view */
+            padding-left: 7.5%;
+            padding-right: 7.5%;
+
+            h3 {
+                padding-top: 15rem;
+                font-size: 2rem;
+                text-align: center;
+                margin: 16px;
+                
+            }
+    
+            h4 {
+                font-size: 1.1rem;
+                text-align: center;
+            }
+    
+            .blog-image {
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+            }
+    
+            p {
+                font-size: 1rem;
+            }
+        }
+
+    }

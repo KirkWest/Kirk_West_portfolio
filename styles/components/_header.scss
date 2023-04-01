@@ -1,0 +1,87 @@
+@import "./utils";
+@import "../defaults/breakpoint";
+@import "../defaults/colors";
+
+
+header {
+    @include styled-box;
+    color:$primary-color;
+    padding: $header-padding / 2;
+    text-align: center;
+    font-size: 1.5rem;
+
+    h1 {
+        text-shadow: 7px 7px black;
+    }
+    
+    .title-wrapper {
+        display: flex;
+        margin: 1rem;
+        margin-top: 0.5rem;
+        align-items: center;
+        justify-content: flex-start;
+
+        .heading-wrapper {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            h1 {
+                margin-top: 4px;
+                margin-left: -$image-width;
+            }
+        }
+
+        img {
+            width: $image-width;
+        }
+
+        @media screen and (max-width: $tablet) {
+            flex-direction: column-reverse;
+            justify-content: center;
+            padding: 1rem;
+            /* adjusts image location in tablet view */
+
+            .heading-wrapper {
+                h1 {
+                    margin-left: 0;
+                    /* keeps heading text centered in tablet view */
+                }
+            }
+        }
+
+        @media screen and (max-width: $phone) {
+            .heading-wrapper {
+                font-size: 1rem;
+                /* shrinks font size in phone view */
+            }
+        }
+    }
+
+    .nav-items {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        font-size: 24px;
+        padding-bottom: 14px;
+
+        a {
+            text-decoration: none;
+            color: #cacaca;
+            @include hover;
+            /* sets nav items to hover and grow */
+        
+      }
+
+        @media screen and (max-width: $tablet) {
+                font-size: 20px;
+                /* shrinks font size in tablet view */
+            
+        }
+
+        @media screen and (max-width: $phone) {
+                 font-size: 16px;
+                 /* shrinks font size in phone view */
+        }
+    }
+  }

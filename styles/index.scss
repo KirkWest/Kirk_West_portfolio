@@ -1,0 +1,44 @@
+@import "./components/header";
+@import "./components/footer";
+@import "./components/utils";
+@import "../styles/defaults/colors";
+@import "../styles/defaults/breakpoint";
+
+body {
+
+    main {
+        font-size: 5rem;
+        color: $primary-color;
+        display: flex;
+        justify-content:flex-start;
+        margin: auto;
+        padding: 5%;
+
+        @media screen and (max-width: $tablet) {
+            /* changes font size on tablet */
+            p {
+                font-size: 4rem;
+            }
+        }
+
+        @media screen and (max-width: $phone) {
+            /* changes font size on phone */
+            p {
+                font-size: 3rem;
+            }
+
+            }
+
+        a {
+            /* link decoration */
+            color:$primary-color;
+            text-decoration: none;
+            text-shadow: 2px 2px #2944df;
+        }
+
+        a:hover {
+            /* changes color when hovered */
+            color: $primary-background;
+        }
+    }
+}

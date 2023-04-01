@@ -1,0 +1,50 @@
+@import "./utils";
+@import "../defaults/breakpoint";
+@import "../defaults/colors";
+
+
+footer {
+  
+    @include styled-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    
+
+
+    
+  
+    
+    .social-media {
+        display: flex;
+        justify-content: space-around;
+        margin-left: auto;
+        margin-right: auto;
+        width: 35%;
+        padding: 10px;
+
+        a {
+          text-decoration: none;
+        }
+
+        .fa {
+            color:$primary-color;
+            @include hover
+            /* sets icons to grow when hovered over */
+
+    }
+    
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  footer {
+      .social-media {
+          width: 50%;
+          margin-left: auto;
+          margin-right: auto;
+      }
+  }
+}

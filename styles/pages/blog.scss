@@ -1,0 +1,66 @@
+@import "../components/header";
+@import "../components/footer";
+@import "../defaults/colors";
+@import "../defaults/breakpoint";
+@import "../components/utils";
+
+body {
+
+    main {
+        /* no media screen adjustments needed as I wanted the boxes to keep
+        their size and wrap */
+
+        .flex-container {
+            display: flex;
+            padding-top: 28px;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+
+        }
+    
+        article {
+
+            figure {
+                border-radius: 8px;
+                display: flex;
+                flex-flow: column;
+                padding: 12px;
+                width: 16rem;
+                height: 16rem;
+                background-color: $primary-background;
+                font-size: 1.5rem;
+                text-align: center;
+                margin: 24px 20px;
+
+                a {
+                    /* sets hover on link to blogs */
+                    @include hover;
+                    padding-top: 14px;
+                    padding-bottom: 28px;
+                    font-size: 1.5rem;
+                    text-align: center;
+                    color:$primary-color;
+                    text-decoration: none;
+                    text-shadow: 2px 2px #2944df;
+                }
+
+            }
+            
+            img {
+                /* for image size */
+                max-width: 350px;
+                max-height: 150px;
+            }
+            
+            figcaption {
+                /* sets caption info, in this case blog date */
+                background-color: #222;
+                font-size: 1rem;;
+                color: $primary-color;
+                padding: 3px;
+                text-align: center;
+            }
+        }
+    }
+}

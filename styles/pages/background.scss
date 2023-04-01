@@ -1,0 +1,15 @@
+@import "../components/header";
+@import "../components/footer";
+
+body {
+  /* sets background for entire website */
+    background-image: url("../../Images/space-2.jpg");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }

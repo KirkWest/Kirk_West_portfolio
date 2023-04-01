@@ -1,0 +1,14 @@
+@mixin styled-box {
+    background-color: $primary-background;
+    border-radius: 0px 40px / 40px;
+    /* title and footer box styling */
+    
+}
+
+@mixin hover {
+
+    &:hover {
+        transform: scale(1.2);
+        transition: all .4s ease-in-out;
+    }
+}

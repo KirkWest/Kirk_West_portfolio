@@ -1,0 +1,41 @@
+@import "../components/header";
+@import "../components/footer";
+@import "../defaults/colors";
+@import "../defaults/breakpoint";
+
+    main {
+        font-size: 4rem;
+        color: $primary-color;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
+
+        a {
+            /* link decoraction */
+            color:$primary-color;
+            text-decoration: none;
+            text-shadow: 2px 2px #2944df;
+        }
+
+        a:hover {
+            /* changes color when hovered */
+            color: $primary-background;
+        }
+
+        @media screen and (max-width: $tablet) {
+            /* changes font size in tablet view */
+            p {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media screen and (max-width: $phone) {
+            /* changes font size in tablet view */
+            p {
+                font-size: 1.5rem;
+            }
+        }
+
+    }
